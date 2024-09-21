@@ -1,0 +1,111 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(238, 239, 240);
+    color: #000;
+}
+.container{
+    margin: 5rem 15rem;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(10, 10, 10);
+}
+header{
+    display: flex;
+    margin: auto 3rem;
+}
+img{
+    width: 5em;
+    border-radius: 3em;
+}
+
+h1 ,h2{
+    margin: auto 3rem;
+    justify-content: center;
+}
+
+input{
+    padding:1em;
+    margin: auto 2em;
+    margin-right: 8em;
+}
+
+.depositBox, .withdrawBox {
+    padding: 2rem 2rem;
+    font-size: large;
+}
+button{
+    padding: 0.8rem;
+    margin: auto 3em;
+    border-radius: 0.4rem;
+    font-size: large;
+
+}
+
+.depositBtn, .withdrawBtn{
+    background-color: rgb(240, 206, 206);
+}
+
+span{
+    margin: auto 3em;
+} */
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.balance-display {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.transaction {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+    border: 2px solid #2e8b57;
+}

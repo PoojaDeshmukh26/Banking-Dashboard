@@ -1,18 +1,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
+    background:url('https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241_1280.jpg');
+    background-size: cover;
 }
 
 .container {
     max-width: 600px;
-    margin: auto;
-    background: white;
+    margin: 50px auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
 .balance-display {
@@ -47,4 +47,274 @@ button {
 button:hover {
     background-color: #218838;
     border: 2px solid #2e8b57;
+}
+
+/* header css starts here... */
+#header{
+    font-family: 'Montez'; 
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+img{
+    width: 60px;
+    border-radius: 10px;
+}
+
+
+#signupBtn, #signinBtn{
+    background-color: #28a745;
+    border: none;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    color: white;
+    margin: 1em 1em 0 0; 
+    border-style: outset; 
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* sign in modal css starts here... */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+  /* Modal Content */
+.signupmodal-content ,form{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    gap:5px;
+  }
+  
+  form{
+    background-color: #fefefe;
+    border-radius: 8px;
+
+  }
+  #formheading{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  gap: 7rem;
+  }
+  #formheading>h1{
+    font-weight: lighter;
+  }
+  form>hr {
+    margin-top: -10px;
+    width: 95%;
+  }
+  label{
+    margin: 0 10px 0 10px;
+  }
+  input[type=text], input[type=password]{
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    background-color: #e4e2e2;
+    border: none;
+    border-radius: 2px;
+    width: 93%;
+  }
+  #formsignbtn{
+    margin:10px;
+    background-color: rgb(7, 199, 7);
+    color: #fff;
+    padding: 10px;
+    border: none;
+  }
+  /* The Close Button */
+  #formheading>.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #formheading>.close:hover,
+  #formheading>.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* sign in css starts here... */
+
+  .signinmodal-content ,form{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    gap:5px;
+  }
+  
+  
+  #formheadingsignin{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  gap: 7rem;
+  }
+  #formheadingsignin>h1{
+    font-weight: lighter;
+  }
+ 
+  #formsignbtnsignin{
+    margin:10px;
+    background-color: rgb(7, 199, 7);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  /* The Close Button */
+  #formheadingsignin>.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #formheadingsignin>.close:hover,
+  #formheadingsignin>.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #formfootercontent{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  #formfootercontent>p:last-child{
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body{
+        background-position: center;
+    }
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type=text], input[type=password] {
+        width: auto;
+        padding: 5px;
+    }
+
+    button {
+        width: auto;
+        padding:auto;
+    }
+
+    #header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    .modal {
+        padding-top: 50px;
+    }
+
+    .signupmodal-content,
+    .signinmodal-content {
+        width: 100%;
+    }
+
+    #formheading, #formheadingsignin {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #formheading > h1, #formheadingsignin > h1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    body{
+        background-position:initial;
+    }
+    input[type=text], input[type=password] {
+        width: auto;
+        padding: 5px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    #signupBtn, #signinBtn, #formsignbtn, #formsignbtnsignin {
+        width: auto;
+        padding: 10px 5px;
+    }
+
+    #formfootercontent {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+
+    .signupmodal-content,
+    .signinmodal-content {
+        width: 100%;
+    }
+    input[type=text], input[type=password] {
+        width:85%;
+        padding: 5px;
+    }
+
+    button {
+        width:70%;
+        padding: 5px;
+        font-size: 0.9em;
+        
+    }
+
+    #signupBtn, #signinBtn, #formsignbtn, #formsignbtnsignin {
+        width: 90%;
+        padding: 10px 0;
+        
+    }
+
+    #formfootercontent {
+        flex-direction: row;
+        align-items: center;
+    }
+    
 }
